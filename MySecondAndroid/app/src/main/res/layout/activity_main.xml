@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELAMAT DATANG DI APLIKASI INPUT SEDERHANA"
+        android:textAlignment="center"
+        android:textSize="80px"
+        android:layout_marginTop="20px"
+        android:textStyle="bold"
+        android:id="@+id/heading"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan Nama"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputnama"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogrup">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdb1"
+            android:text="Laki-Laki"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdb2"
+            android:text="Perempuan"
+            android:checked="false"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Umur (17 Tahun - 30 Tahun)"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:min="17"
+        android:padding="15dp"
+        android:progress="30"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agama"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/agama"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/daftarAgama"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkAgree"
+        android:text="Semua yang Diisi Benar"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:onClick="hasil"
+        android:text="Submit"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="110dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

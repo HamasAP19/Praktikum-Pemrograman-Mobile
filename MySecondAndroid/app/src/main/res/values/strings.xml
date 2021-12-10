@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Second Android</string>
+    <string-array name="daftarAgama">
+        <item>Pilih</item>
+        <item>Islam</item>
+        <item>Hindu</item>
+        <item>Kristen</item>
+        <item>Ateis</item>
+        <item>Budha</item>
+    </string-array>
+</resources>
