@@ -1,2 +1,2 @@
 # Praktikum-Pemrograman-Mobile
-Kumpulan kegiatan saat praktikum
+Kumpulan source code kegiatan saat praktikum pemrograman mobile 2021
