@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".CRUDItem.TambahItemProduk">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="10dp"
+        android:text="Tambah\nItem Produk"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/divKodeProduk"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_below="@+id/judul">
+
+        <TextView
+            android:id="@+id/labelKodeProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode Produk"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputKodeProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelKodeProduk"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/style_inputtext"
+            android:backgroundTint="@color/white"
+            android:hint="Masukan Kode Produk"
+            android:maxLength="7"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/alertText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputKodeProduk"
+            android:text="Maks Input, 7 Karakter"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/divNamaProduk"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_below="@+id/divKodeProduk">
+
+        <TextView
+            android:id="@+id/labelNamaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Produk"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputNamaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelNamaProduk"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/style_inputtext"
+            android:backgroundTint="@color/white"
+            android:hint="Masukan Nama Produk"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/divKategoriProduk"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_below="@+id/divNamaProduk">
+
+        <TextView
+            android:id="@+id/labelKategoriProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori Produk"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/inputKategoriProduk"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/labelKategoriProduk"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/style_spinner"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/divJumStok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divKategoriProduk"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/labelJumStok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Stok"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputJumStok"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelJumStok"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/style_inputtext"
+            android:backgroundTint="@color/white"
+            android:hint="Jumlah Stok"
+            android:inputType="number"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/divJumStok"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="@color/black"
+        android:text="Tambah Item"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>
